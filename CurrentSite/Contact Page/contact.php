@@ -1,0 +1,259 @@
+<?php
+
+    $error = ""; $successMessage = "";
+
+    if ($_POST) {
+        
+        if (!$_POST["email"]) {
+            
+            $error .= "An email address is required.<br>";
+            
+        }
+        
+        if (!$_POST["content"]) {
+            
+            $error .= "The content field is required.<br>";
+            
+        }
+        
+        if (!$_POST["subject"]) {
+            
+            $error .= "The subject is required.<br>";
+            
+        }
+        
+        if ($_POST['email'] && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) === false) {
+            
+            $error .= "The email address is invalid.<br>";
+            
+        }
+        
+        if ($error != "") {
+            
+            $error = '<div class="alert alert-danger" role="alert"><p>There were error(s) in your form:</p>' . $error . '</div>';
+            
+        } else {
+            
+            $emailTo = "bradjlund@gmail.com";
+            
+            $subject = $_POST['subject'];
+            
+            $content = $_POST['content'];
+            
+            $headers = "From: ".$_POST['email'];
+            
+            if (mail($emailTo, $subject, $content, $headers)) {
+                
+                $successMessage = '<div class="alert alert-success" role="alert">Your message was sent, we\'ll get back to you ASAP!</div>';
+                
+                
+            } else {
+                
+                $error = '<div class="alert alert-danger" role="alert"><p><strong>Your message couldn\'t be sent - please try again later</div>';
+                
+                
+            }
+            
+        }
+        
+        
+        
+    }
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ariel McCleary</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
+        
+        <style>
+            
+            body {
+               
+                font-size: 18px;
+            }
+
+            #damburger {
+              font-size: 25px;
+            }
+
+            .icon-bar {
+                color: #0275d8;
+            }
+
+            html, 
+body{
+  color: #000;
+  background-image: url(blueback.jpg);
+
+  font-family:  'Special Elite';
+    }
+    .contact-form {
+        padding: 50px;
+        margin: 30px auto;
+    }	
+    .contact-form h1 {
+        font-size: 42px;
+        font-family:  'Special Elite';
+        margin: 0 0 50px;
+        text-align: center;
+    }
+    .contact-form .form-group {
+        margin-bottom: 20px;
+    }
+    .contact-form .form-control, .contact-form .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+	
+	.contact-form .form-control:focus {
+		
+		box-shadow: 0 0 8px ;
+	}
+    .contact-form .btn-primary {
+        min-width: 250px;
+        
+        background: #000;
+        margin-top: 20px;
+        border: none;
+    }
+    .contact-form .btn-primary:hover {
+        color: #fff; 
+    }
+    .contact-form .btn-primary i {
+        margin-right: 5px;
+    }
+    .contact-form label {
+        opacity: 0.9;
+    }
+    .contact-form textarea {
+        resize: vertical;
+    }
+    .bs-example {
+    	margin: 20px;
+    }
+            
+        </style>
+        
+        
+    </head>
+    <body>
+        <nav class="navbar navbar navbar-static-top ">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"><i id="damburger" class="fa fa-bars"></i></span>
+                  
+                </button>
+                
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                
+                  <ul class="nav navbar-nav navbar-left ">
+                    <li><a href="http://www.arielmccleary.com/index.html">Home</a></li>
+                    <li><a href="http://www.arielmccleary.com/Concerts/concerts.html">Concerts</a></li>
+                    <li><a href="http://www.arielmccleary.com/Merch/merch.html">Merch</a></li>
+                    <li><a href="http://www.arielmccleary.com/About/about.html">About</a></li>
+                    <li><a href="http://www.arielmccleary.com/Contact/contact.php">Contact</a></li>
+                    
+                    
+                  </ul>
+             
+                  <ul class="nav navbar-nav navbar-right hidden-xs">
+                      <li><a class="socials" href="https://www.facebook.com/arielmcclearyofficial/" target="_blank" ><i class="fa fa-facebook-square"></i></a></li>
+                      <li><a class="socials" href="https://www.instagram.com/arielmcclearyofficial/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                      <li><a class="socials" href="https://twitter.com/McSquariel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="socials" href="https://www.youtube.com/channel/UCsY1BLbqYnHeDPjiA8uHxYw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                      <li><a class="socials" href="https://music.apple.com/us/artist/ariel-mccleary/1490681627" target="_blank"><i class="fa fa-apple"></i></a></li>
+                      <li><a class="socials" href="https://open.spotify.com/artist/5incGzrobL1vUeuaZR7hLu" target="_blank"><i class="fa fa-spotify"></i></a></li>
+                     
+                  
+                  </ul>
+              </div>
+              
+            </div>
+          </nav>
+
+          <div class="text-center" id="error"><? echo $error.$successMessage; ?></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 m-auto">
+                    <div class="contact-form">
+                        <h1>Get in Touch</h1>
+                        <form method="post">
+                            <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                            </div>            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="content">Message</label>
+                                <textarea class="form-control" id="content" rows="5" name="content" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" id="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+                            </div>            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+          
+            $("form").submit(function(e) {
+                
+                var error = "";
+                
+                if ($("#email").val() == "") {
+                    
+                    error += "The email field is required.<br>"
+                    
+                }
+                
+                if ($("#subject").val() == "") {
+                    
+                    error += "The subject field is required.<br>"
+                    
+                }
+                
+                if ($("#content").val() == "") {
+                    
+                    error += "The content field is required.<br>"
+                    
+                }
+                
+                if (error != "") {
+                    
+                   $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
+                    
+                    return false;
+                    
+                } else {
+                    
+                    return true;
+                    
+                }
+            })
+            
+      </script>
+
+    </body>
+</html>
