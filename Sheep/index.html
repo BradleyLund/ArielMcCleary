@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #myVideo {
+                position: fixed;
+                right:0;
+                bottom:0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .content {
+                position: fixed;
+                bottom: 100px;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .keys {
+                display: flex;
+                flex: 1;
+                min-height: 100vh;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .key {
+                border: .4rem solid black;
+                border-radius: .5rem;
+                margin: 1rem;
+                font-size: 1.5rem;
+                padding: 1rem .5rem;
+                transition: all .07s ease;
+                width: 10rem;
+                text-align: center;
+                color: white;
+                background: rgba(0,0,0,0.4);
+                text-shadow: 0 0 .5rem black;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="./Video/arielSheep.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h1>Sheep</h1>
+            <p>Play your favourite song by Ariel McCleary</p>
+        
+            <div class="keys">
+                <div data-key="32" class ="key">
+                    <kbd>SPACE</kbd>
+                    <span class="controls">pause</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
