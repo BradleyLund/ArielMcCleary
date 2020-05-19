@@ -163,6 +163,7 @@ body{
                     <li><a href="http://www.arielmccleary.com/Concerts/concerts.html">Concerts</a></li>
                     <li><a href="http://www.arielmccleary.com/Merch/merch.html">Merch</a></li>
                     <li><a href="http://www.arielmccleary.com/About/about.html">About</a></li>
+                    <li><a href="http://www.arielmccleary.com/Press/press.html">Press</a></li>
                     <li><a href="http://www.arielmccleary.com/Contact/contact.php">Contact</a></li>
                     
                     
