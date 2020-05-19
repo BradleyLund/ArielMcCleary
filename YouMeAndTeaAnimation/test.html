@@ -1,0 +1,81 @@
+<html>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <style>
+            
+            *
+{
+  margin:0;padding:0;  
+}
+
+html,body
+{
+    height:100%;   
+}
+body
+{
+   display: table; 
+   margin: 0 auto;
+   background-color: black;
+}
+
+.container
+{  
+    height: 100%;
+    display: table-cell;   
+    vertical-align: middle;    
+}
+.cent
+{
+    height:50px;
+    width:50px;
+    display:table-cell;
+    vertical-align: middle;
+        
+}
+            
+        </style>
+        
+    </head>
+
+    <body>
+       
+
+        <div class="container">
+            <div class="cent"><img src="whiteTeaCup.png"></div>
+        </div>
+
+        <script>
+//see if i can put the div on the left or right and increase the size as it is working now
+            /*maybe something based on the actual position of the
+            mouse or something that works out how it has moved and do something to
+            each image based on that*/
+
+            $(window).mousemove(function(mouseData) {
+                $("img").css({"width": `${mouseData.originalEvent.x}px`})
+            })
+            
+          /*  $(window).mousemove(function(mouseData){
+                $("#teaCup").css({"left": `${mouseData.originalEvent.x}px`});
+                $("#ukeBabyImage").css({"width": `${mouseData.originalEvent.x}px`});
+                $("#ukeBabyImage").css({"right": `${mouseData.originalEvent.x}px`});
+
+                //var width = mouseData.originalEvent.x;
+                //console.log(width);
+                //$("#ukeBabyImage").width(width);
+            });
+
+            $(window).scroll(function(){
+                $("#teaCup").css({"left": ($(window).scrollTop()) + "px", "top": 500+($(window).scrollTop())+"px"});
+            });
+
+            //, "top": `${mouseData.originalEvent.y}`+"px"
+            
+            */
+
+           
+        </script>
+    </body>
+    </html>

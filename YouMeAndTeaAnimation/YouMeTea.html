@@ -1,0 +1,113 @@
+<html>
+    <head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+        <style>
+            
+            body {
+                /*background-color: #D6C6FF;*/
+                height: 100vh;
+                background-image: linear-gradient(#D2C5FF,#C4B8EE , rgb(122, 110, 165));
+            }
+
+            #teaCup {
+                position: absolute;
+                top: 200;
+                left: 700;
+            }
+
+            #uke {
+                position: absolute;
+                top: 200;
+                left: 700;
+            }       
+
+            #notes {
+                position: absolute;
+                top: 50;
+                left: 250;
+            }
+
+            #whiteTeaCup {
+                position: absolute;
+                top: 50;
+                left: 250;
+            }
+
+            #whiteNotes {
+                position: absolute;
+                top: 410;
+                left: 0;
+            }
+
+            #whiteUke {
+                position: absolute;
+                top: 410;
+                left: 0;
+            }
+
+            
+
+            
+        </style>
+    </head>
+    <body>
+
+        <div id= 'big-page'>
+            <div id="teaCup">
+                <img src="TeaBaby.png" alt="whoops">   
+            </div>
+
+            <div id="uke">
+                <img src="ukeBaby.png" alt="whoops">   
+            </div>
+
+            <div id="notes">
+                <img src="notesBaby.png" alt="whoops">
+            </div>
+
+            <div id="whiteTeaCup">
+                <img src="whiteTeaCup.png">
+            </div>
+
+            <div id="whiteNotes">
+                <img src="whiteNotes.png">
+            </div>
+
+            <div id="whiteUke">
+                <img src="whiteUke.png">
+            </div>
+            
+        </div>
+
+        <script>
+
+            /*Add in linear gradient from the other purple color
+            in you me and tea videos.
+
+            change images to white and see how it looks.
+
+            work out how to move them around only on mouse move*/
+            
+            
+
+            $(window).mousemove(function(mouseData){
+                $("#notes").css({"left": 1000-(mouseData.originalEvent.x)/2 +'px'});
+                $("#whiteNotes").css({"left": mouseData.originalEvent.x/1.2 +'px' })
+                $("#teaCup").css({"left" : 1000-(mouseData.originalEvent.x)/1.3 +'px'})
+
+                $("#uke").css({"left": 50+(mouseData.originalEvent.x)/2 +'px'});
+                $("#whiteUke").css({"left": 1000-(mouseData.originalEvent.x)/2 +'px' })
+                $("#whiteTeaCup").css({"left" : 30+mouseData.originalEvent.x/2 +mouseData.originalEvent.x/2 +'px'})
+
+            });
+
+           
+
+    
+        </script>
+        
+    </body>
+</html>
