@@ -1,5 +1,28 @@
 @media only screen and (max-width: 600px) {
-    #homePic {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .icon-side-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: black;
+   
+  }
+  
+  .icon-side-bar a {
+      display: block;
+      text-align: center; 
+      padding: 15px;
+      color: #0275d8;
+      font-size: 16px;
+  }  
+  
+  #homePic {
     
         background-image: url(ConcertHome.jpg);
         height: 400px; 
@@ -79,6 +102,10 @@
       background-color: #110809;;
       /*padding-top:51px;*/
       
+  }
+
+  .icon-side-bar {
+    display: none;
   }
 
   .navbar {

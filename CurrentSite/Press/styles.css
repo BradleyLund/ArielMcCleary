@@ -1,20 +1,66 @@
+@media screen and (min-width:600px) {
 
-            body {
-                font-family: 'Special Elite';
-                font-size: 18px;
-                background-color: black;
-            }
+  body {
+    font-family: 'Special Elite';
+    font-size: 18px;
+    background-color: black;
+  }
 
-            #merch {
-                text-align: center;
-                color:white;
-            }
+  #merch {
+    text-align: center;
+    color:white;
+  }
 
-            .icon-bar {
-              color: #0275d8;
-              
-            }
+  .icon-bar {
+    color: #0275d8;
+  }
 
-            #damburger {
-              font-size: 25px;
-            }
+  #damburger {
+    font-size: 25px;
+  }
+
+  .icon-side-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width:600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Special Elite';
+    font-size: 18px;
+    background-color: black;
+  }
+
+  #merch {
+    text-align: center;
+    color:white;
+  }
+
+  .icon-bar {
+    color: #0275d8;
+  }
+
+  #damburger {
+    font-size: 25px;
+  }
+  
+  .icon-side-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: black;
+   
+  }
+  
+  .icon-side-bar a {
+      display: block;
+      text-align: center; 
+      padding: 15px;
+      color: #0275d8;
+      font-size: 16px;
+  }
+}

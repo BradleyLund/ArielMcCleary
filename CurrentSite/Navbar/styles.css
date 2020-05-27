@@ -12,3 +12,32 @@ body {
 #damburger {
   font-size: 25px;
 }
+
+.icon-side-bar {
+  display: none;
+}
+
+@media screen and (max-width:600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .icon-side-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: black;
+   
+  }
+  
+  .icon-side-bar a {
+      display: block;
+      text-align: center; 
+      padding: 15px;
+      color: #0275d8;
+      font-size: 16px;
+  }
+}

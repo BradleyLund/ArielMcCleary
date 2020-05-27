@@ -1,3 +1,29 @@
+@media screen and (max-width:600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .icon-side-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      
+   
+  }
+  
+  .icon-side-bar a {
+      display: block;
+      text-align: center; 
+      padding: 15px;
+      color: #0275d8;
+      font-size: 16px;
+  }
+}
+
+
 body {
                
     font-size: 18px;
@@ -9,6 +35,10 @@ body {
 
 .icon-bar {
     color: #0275d8;
+}
+
+.icon-side-bar {
+  display: none;
 }
 
 html, 
