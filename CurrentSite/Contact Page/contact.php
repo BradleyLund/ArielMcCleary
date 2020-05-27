@@ -72,75 +72,7 @@
         <script src="https://kit.fontawesome.com/7e4cf377d7.js" crossorigin="anonymous"></script>         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
-        
-        <style>
-            
-            body {
-               
-                font-size: 18px;
-            }
-
-            #damburger {
-              font-size: 25px;
-            }
-
-            .icon-bar {
-                color: #0275d8;
-            }
-
-            html, 
-body{
-  color: #000;
-  background-image: url(blueback.jpg);
-
-  font-family:  'Special Elite';
-    }
-    .contact-form {
-        padding: 50px;
-        margin: 30px auto;
-    }	
-    .contact-form h1 {
-        font-size: 42px;
-        font-family:  'Special Elite';
-        margin: 0 0 50px;
-        text-align: center;
-    }
-    .contact-form .form-group {
-        margin-bottom: 20px;
-    }
-    .contact-form .form-control, .contact-form .btn {
-        min-height: 38px;
-        border-radius: 2px;
-    }
-	
-	.contact-form .form-control:focus {
-		
-		box-shadow: 0 0 8px ;
-	}
-    .contact-form .btn-primary {
-        min-width: 250px;
-        
-        background: #000;
-        margin-top: 20px;
-        border: none;
-    }
-    .contact-form .btn-primary:hover {
-        color: #fff; 
-    }
-    .contact-form .btn-primary i {
-        margin-right: 5px;
-    }
-    .contact-form label {
-        opacity: 0.9;
-    }
-    .contact-form textarea {
-        resize: vertical;
-    }
-    .bs-example {
-    	margin: 20px;
-    }
-            
-        </style>
+        <link rel="stylesheet" href="styles.css">
         
         
     </head>
