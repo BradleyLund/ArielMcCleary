@@ -1,0 +1,48 @@
+
+
+    body {
+        font-family: 'Special Elite';
+        font-size: 18px;
+        background-image: url(orangeBack.jpg);
+    }
+    
+    #merch {
+        text-align: center;
+    }
+
+    .icon-side-bar {
+        display: none;
+    }
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .icon-side-bar {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+         /* background-color: black;*/  
+       
+      }
+      
+      .icon-side-bar a {
+          display: block;
+          text-align: center;
+          
+          padding: 16px;
+          /*transition: all 0.3s ease;*/
+          color: #0275d8;
+          font-size: 16px;
+      }
+      
+      .icon-side-bar a:hover {
+        background-color: grey;
+      }
+}
