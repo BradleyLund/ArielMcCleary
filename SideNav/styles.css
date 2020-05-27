@@ -1,23 +1,29 @@
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .icon-side-bar {
     position: fixed;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
     background-color: black;
-  }
+ 
+}
 
-  .icon-side-bar a {
+.icon-side-bar a {
     display: block;
     text-align: center;
+    
     padding: 16px;
-    transition: all 0.3s ease;
+    /*transition: all 0.3s ease;*/
     color: #0275d8;
     font-size: 16px;
-  }
+}
 
-  .icon-side-bar a:hover {
-      background-color: grey;
-  }
+.icon-side-bar a:hover {
+  background-color: grey;
+}
