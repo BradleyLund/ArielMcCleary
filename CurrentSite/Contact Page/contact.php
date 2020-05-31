@@ -76,6 +76,7 @@
 </script>
 
         <title>Ariel McCleary Contact Form</title>
+        <link rel="icon" href="favicon.ico">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="ukulele, Ariel,McCleary,Musician, Singer">
