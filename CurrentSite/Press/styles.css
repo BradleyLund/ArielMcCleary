@@ -7,6 +7,10 @@
     
   }
 
+  .top-social {
+    display: none;
+  }
+
   #merch {
     text-align: center;
     color:white;
@@ -33,6 +37,14 @@
   .press-card {
     width: 30%;
     height: 250px;
+  }
+
+  .press-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
   }
 
   .press a {
@@ -67,7 +79,7 @@
   #damburger {
     font-size: 25px;
   }
-  
+  /*
   .icon-side-bar {
       position: fixed;
       bottom: 0;
@@ -84,7 +96,7 @@
       padding: 15px;
       color: #0275d8;
       font-size: 16px;
-  }
+  }*/
 
   .press {
     display: flex;   
@@ -105,4 +117,11 @@
     width: 60%;
     height: 250px;
   }
+
+  .top-social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
 }
