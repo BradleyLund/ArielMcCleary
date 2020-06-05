@@ -1,53 +1,48 @@
-
-
+@media screen and (min-width: 600px) {
     body {
         font-family: 'Special Elite';
         font-size: 18px;
         background-image: url(orangeBack.jpg);
+        color:white;
     }
+
+    .top-social {
+        display: none;
+      }
     
     #merch {
         text-align: center;
     }
 
-    .icon-side-bar {
-        display: none;
-    }
-
-    .icon-bar {
-        color: #0275d8;
-        
-      }
-
-      #damburger {
-        font-size: 25px;
-      }
-
+     
+}
 
 
 @media screen and (max-width: 600px) {
     body {
         margin: 0;
         padding: 0;
+        font-family: 'Special Elite';
+        font-size: 18px;
+        background-image: url(orangeBack.jpg);
+        color:white;
+    }
+
+    .top-social {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+      #merch {
+        text-align: center;
+    }
+
+    .icon-bar {
+        color: #0275d8;
       }
-      
-      .icon-side-bar {
-          position: fixed;
-          bottom: 0;
-          width: 100%;
-          display: flex;
-          justify-content: space-evenly;
-          
-       
-      }
-      
-      .icon-side-bar a {
-          display: block;
-          text-align: center;
-          
-          padding: 16px;
-          
-          color: #0275d8;
-          font-size: 16px;
+
+      #damburger {
+        font-size: 25px;
       }
 }
