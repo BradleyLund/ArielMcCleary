@@ -3,24 +3,13 @@
     margin: 0;
     padding: 0;
   }
+
+  .top-social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
   
-  .icon-side-bar {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-evenly;
-      background-color: black;
-   
-  }
-  
-  .icon-side-bar a {
-      display: block;
-      text-align: center; 
-      padding: 15px;
-      color: #0275d8;
-      font-size: 16px;
-  }  
   
   #homePic {
     
@@ -103,7 +92,7 @@
       
   }
 
-  .icon-side-bar {
+  .top-social {
     display: none;
   }
 
