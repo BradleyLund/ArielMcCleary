@@ -149,13 +149,20 @@
       
     /* border-top: 10px solid #0275d8; */
       
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      /* display: flex;
+     justify-content: space-evenly; */
+     padding-top: 10px;
+     color: #0275d8;
       height: 630px;
       text-align: center;
       align-items: center;
       background-image: url(bluebackbottom.jpg)
       
+  }
+
+  #videos {
+    display: flex;
+    justify-content: space-evenly ;
   }
 
   #oneWaySigns {
