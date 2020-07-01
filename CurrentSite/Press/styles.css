@@ -13,7 +13,7 @@
 
   #merch {
     text-align: center;
-    color:white;
+    color:#0275d8;
   }
 
   .icon-bar {
@@ -31,7 +31,7 @@
   .press {
     display: flex;
     justify-content: center;    
-    color: white
+    color:#0275d8;
   }
 
   .press-card {
@@ -49,7 +49,7 @@
 
   .press a {
     text-decoration: none;
-    color:white
+    color:#0275d8;
   }
 
   .press :hover {
@@ -64,6 +64,7 @@
     padding: 0;
     font-family: 'Special Elite';
     font-size: 18px;
+    color: #0275d8;
     background-image: url(orangeBack.jpg);
   }
 
