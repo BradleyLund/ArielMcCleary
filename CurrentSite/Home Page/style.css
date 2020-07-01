@@ -134,8 +134,8 @@
       
       
       
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      justify-content: space-evenly;
       height: 558px;
       text-align: center;
       align-items: center;
@@ -160,7 +160,7 @@
 
   #oneWaySigns {
     height:420px; 
-    padding-left: 175px;
+    /* padding-left: 175px; */
   }
   
   #spotifyFrame {
