@@ -131,18 +131,25 @@
       
       border-top: 10px solid #0275d8;
       
-      
-      
-      
-      display: flex;
-      justify-content: space-evenly;
-      height: 558px;
       text-align: center;
-      align-items: center;
+    align-items: center;
+      
+      
+      
+      height: 558px;
       
       
       
       
+      
+  }
+
+  #spotifyCenter {
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
   }
   
   #youtube {
